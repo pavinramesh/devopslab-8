@@ -3,16 +3,16 @@
 
 ```
 docker build --no-cache -t pavinr/users:1.0 ./users
-docker push abhi25022004/users:1.0
+docker push pavinr/users:1.0
 
 docker build --no-cache -t pavinr/posts:1.0 ./posts
-docker push abhi25022004/posts:1.0
+docker push pavinr/posts:1.0
 
 docker build --no-cache -t pavinr/api-gateway:1.0 ./api-gateway
-docker push abhi25022004/api-gateway:1.0
+docker push pavinr/api-gateway:1.0
 
 docker build --no-cache -t pavinr/frontend:1.0 ./frontend
-docker push abhi25022004/frontend:1.0
+docker push pavinr/frontend:1.0
 ```
 
 ## 2. Update images in K8s manifests (your-registry/...) to your pushed image names.
